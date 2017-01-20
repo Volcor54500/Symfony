@@ -64,7 +64,7 @@ class AdvertController extends Controller
     if ($request->isMethod('POST')) {
       $request->getSession()->getFlashBag()->add('notice', 'Annonce bien enregistrée.');
 
-      // Puis on redirige vers la page de visualisation de cettte annonce
+      // Puis on redirige vers la page de visualisation de cette annonce
       return $this->redirectToRoute('oc_platform_view', array('id' => 5));
     }
 
